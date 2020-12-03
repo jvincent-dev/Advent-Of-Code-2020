@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node",
-    "all": "for i in `seq 1 6`; do echo Day $i && npm start --silent $i && echo '\n'; done",
+    "all": "for i in `seq 1 2`; do echo Day $i && npm start --silent $i && echo '\n'; done",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "jvincent-dev",

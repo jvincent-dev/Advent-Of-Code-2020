@@ -1,7 +1,7 @@
 const fs = require('fs')
 
-const testCase = fs.readFileSync('./1/input.txt', { encoding: 'utf-8' })
-const expenses = testCase.split('\n').map(expense => parseInt(expense))
+const input = fs.readFileSync('./1/input.txt', { encoding: 'utf-8' })
+const expenses = input.split('\n').map(expense => parseInt(expense))
 const findExpensesThatSumTo2020 = expenses => {
   for (let i = 0; i < expenses.length; i++)
     for (let j = 0; j < expenses.length; j++) {
